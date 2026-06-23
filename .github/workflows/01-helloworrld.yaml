@@ -1,0 +1,16 @@
+name: Hello World Workflow
+
+# Triggers the workflow on code pushes or manual triggers
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    # Specifies the type of virtual machine runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Logs out the Hello World message
+      - name: Run Hello World
+        run: echo "Hello, World!"
